@@ -50,6 +50,7 @@ The pipeline is fully containerized using **Docker** and implements robust data 
 3.  **Access the Interfaces**
     * **Airflow UI:** `http://localhost:8080` (User/Pass: `admin`/`admin`)
     * **MinIO Console:** `http://localhost:9001` (User/Pass: `minioadmin`/`minioadmin`)
+    * **Dashboard:** `http://localhost:8501`
 
 4.  **Trigger the Pipeline**
     * Upload `orders.csv` to the `raw-data` bucket in MinIO.
@@ -70,6 +71,13 @@ The pipeline is fully containerized using **Docker** and implements robust data 
 | Processing | 11 | $3,301.34 |
 | Cancelled | 3 | $1,017.99 |
 
+## Visualization: Streamlit, Plotly
+<img width="1682" height="601" alt="image" src="https://github.com/user-attachments/assets/d1291115-4549-404f-92ef-4bdad6a59a26" />
+<img width="1660" height="791" alt="image" src="https://github.com/user-attachments/assets/57a7daa8-3b5e-4eaa-ba87-c0c7296fe7cd" />
+
+
+
 ## 👤 Author
 **Rayyan Kauchali**
 *MSc Student | Data Science & Engineering*
+
