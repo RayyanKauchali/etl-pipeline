@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Airflow
+logs/
+airflow.cfg
+webserver_config.py
+
+# Docker/Project specific
+# (We want to keep dags and etl_tasks.py, but ignore temp data)
+*.csv
+!orders.csv
+# ^ The line above keeps orders.csv if you want it as a sample, 
+# otherwise remove the exclamation mark to ignore all CSVs.
+
+# IDE settings
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "orders",
+  "type": "object",
+  "required": ["order_id", "user_id", "product_id", "quantity", "price", "order_date", "status"],
+  "properties": {
+    "order_id": {"type": ["integer", "string"]},
+    "user_id": {"type": ["integer", "string"]},
+    "product_id": {"type": ["integer", "string"]},
+    "quantity": {"type": "number"},
+    "price": {"type": "number"},
+    "order_date": {"type": "string", "format": "date"},
+    "status": {"type": "string"}
+  },
+  "additionalProperties": true
+}
