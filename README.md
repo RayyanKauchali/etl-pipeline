@@ -38,7 +38,7 @@ The pipeline is fully containerized using **Docker** and implements robust data 
 ### Steps
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/ecommerce-etl-pipeline.git](https://github.com/YOUR_USERNAME/ecommerce-etl-pipeline.git)
+    git clone [https://github.com/RayyanKauchali/etl-pipeline.git](https://github.com/RayyanKauchali/etl-pipeline.git)
     cd ecommerce-etl-pipeline
     ```
 
@@ -80,4 +80,5 @@ The pipeline is fully containerized using **Docker** and implements robust data 
 ## 👤 Author
 **Rayyan Kauchali**
 *MSc Student | Data Science & Engineering*
+
 
