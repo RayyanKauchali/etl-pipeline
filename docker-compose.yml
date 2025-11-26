@@ -105,6 +105,25 @@ services:
       interval: 10s
       retries: 10
 
+  # Dashboard Service (Streamlit)
+  dashboard:
+    build: ./dashboard
+    container_name: dashboard
+    ports:
+      - "8501:8501"
+    depends_on:
+      pg_etl:
+        condition: service_healthy
+    environment:
+      - DB_HOST=pg_etl
+      - DB_NAME=analytics_db
+      - DB_USER=etl_user
+      - DB_PASS=etl_pass
+    volumes:
+      - ./dashboard:/app
+    networks:
+      - default
+
 volumes:
   postgres_airflow_db:
   minio_data:
